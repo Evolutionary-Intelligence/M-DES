@@ -1,0 +1,40 @@
+WARNING worker.py:1866 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ... Worker ID: ... Node ID: ... Worker IP address: ... Worker port: ... Worker PID: ... Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+* experiment: 4 ***:
+  * function: sphere:
+    runtime: 6.60141e+02.
+  * function: cigar:
+    runtime: 1.64121e+03.
+  * function: discus:
+    runtime: 1.98531e+03.
+  * function: cigar_discus:
+    runtime: 1.48290e+03.
+  * function: ellipsoid:
+Tip: use `ray status` to view detailed cluster status. To disable these messages, set RAY_SCHEDULER_EVENTS=0.
+Warning: The following resource request cannot be scheduled right now: {'CPU': 1.0}. This is likely due to all cluster resources being claimed by actors. Consider creating fewer actors or adding more nodes to this Ray cluster.
+    runtime: 1.07073e+04.
+  * function: different_powers:
+    runtime: 9.39718e+03.
+  * function: schwefel221:
+    runtime: 1.07658e+04.
+  * function: step:
+    runtime: 4.97676e+02.
+  * function: rosenbrock:
+Warning: The following resource request cannot be scheduled right now: {'CPU': 1.0}. This is likely due to all cluster resources being claimed by actors. Consider creating fewer actors or adding more nodes to this Ray cluster.
+    runtime: 1.08092e+04.
+  * function: schwefel12:
+Traceback (most recent call last):
+  File ".../pypoplib/dlmcma.py", line ..., in optimize
+    results = ray.get(ray_results)  # to synchronize (a time-consuming operation)
+  File ".../lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File ".../lib/python3.8/site-packages/ray/_private/worker.py", line 2382, in get
+    raise value
+ray.exceptions.RayActorError: The actor died unexpectedly before finishing this task.
+	class_name: MMES
+	actor_id: ...
+	pid: ...
+	namespace: ...
+	ip: ...
+The actor is dead because its worker process has died. Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+The actor never ran - it was cancelled before it started running.
+Inconsistency detected by ld.so: dl-tls.c: 493: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
