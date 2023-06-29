@@ -1,0 +1,32 @@
+* experiment: 8 ***:
+  * function: sphere:
+    runtime: 6.70825e+02.
+  * function: cigar:
+    runtime: 1.49698e+03.
+  * function: discus:
+    runtime: 2.00425e+03.
+  * function: cigar_discus:
+    runtime: 1.32975e+03.
+  * function: ellipsoid:
+WARNING worker.py:1866 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ... Worker ID: ... Node ID: ... Worker IP address: ... Worker port: ... Worker PID: ... Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+Traceback (most recent call last):
+  File "run_experiments.py", line 210, in <module>
+    experiments.run(Optimizer)
+  File "run_experiments.py", line 76, in run
+    experiment.run(optimizer)
+  File "run_experiments.py", line 49, in run
+    results = solver.optimize()
+  File ".../PyProjects/tpds2022/pypoplib/dlmcma.py", line 92, in optimize
+    results = ray.get(ray_results)  # to synchronize (a time-consuming operation)
+  File ".../PyProjects/tpds2022/env_tpds2022/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File ".../PyProjects/tpds2022/env_tpds2022/lib/python3.8/site-packages/ray/_private/worker.py", line 2382, in get
+    raise value
+ray.exceptions.RayActorError: The actor died unexpectedly before finishing this task.
+	class_name: MMES
+	actor_id: ...
+	pid: ...
+	namespace: ...
+	ip: ...
+The actor is dead because its worker process has died. Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+The actor never ran - it was cancelled before it started running.
