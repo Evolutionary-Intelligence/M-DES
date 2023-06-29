@@ -1,0 +1,10 @@
+* experiment: 1 ***:
+  * function: schwefel221:
+    runtime: 1.07813e+04.
+  * function: step:
+    runtime: 3.34909e+02.
+  * function: rosenbrock:
+    runtime: 1.07555e+04.
+  * function: schwefel12:
+    runtime: 1.06918e+04.
+*** Total runtime: 3.25641e+04 ***.
