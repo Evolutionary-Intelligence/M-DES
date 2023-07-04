@@ -7,5 +7,6 @@ For all benchmarking optimizers, their source code are openly accessed via our r
 # Project Structure
 
 * **README.md**: for basic information of the companion website
+* **run_experiments.py**: script to run all numerical experiments for all black-box optimizers
 * **plot_median_vs_es.py**: to print (median) convergence curves when compared with [ESs](https://pypop.readthedocs.io/en/latest/es/es.html)
 * **plot_median_vs_others.py**: to print (median) convergence curves when compared with [all others](https://pypop.readthedocs.io/en/latest/index.html) (except ESs)
