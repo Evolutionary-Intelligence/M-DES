@@ -6,6 +6,6 @@ For all benchmarking optimizers, their source code are openly accessed via our r
 
 # Project Structure
 
-* **README.md**: for basic information of the project
-* **plot_median_vs_es.py**: to print (median) convergence curves when compared with ESs
-* **plot_median_vs_others.py**: to print (median) convergence curves when compared with all others (except ESs)
+* **README.md**: for basic information of the companion website
+* **plot_median_vs_es.py**: to print (median) convergence curves when compared with [ESs](https://pypop.readthedocs.io/en/latest/es/es.html)
+* **plot_median_vs_others.py**: to print (median) convergence curves when compared with [all others](https://pypop.readthedocs.io/en/latest/index.html) (except ESs)
