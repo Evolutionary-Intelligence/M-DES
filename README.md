@@ -16,7 +16,7 @@ For all benchmarking optimizers, their source code are openly accessed via our r
 
 # Bash for Python Virtual Environment (Conda)
 
-* Before proceeding, first install the software [miniconda](https://docs.conda.io/en/latest/miniconda.html) on all Linux servers
+* Before proceeding, first install the software [miniconda](https://docs.conda.io/en/latest/miniconda.html) on all Linux servers (*suggested*):
 
 ```bash
 $ conda deactivate
