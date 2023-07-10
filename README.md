@@ -17,10 +17,10 @@ For all benchmarking optimizers, their source code are openly accessed via our r
 
 ```bash
 $ conda deactivate
-$ mkdir PyProjects
-$ cd PyProjects/
-$ mkdir tevc2022
-$ cd tevc2022/
+$ mkdir PyProjects  # optional
+$ cd PyProjects/  # optional
+$ mkdir tevc2022  # optional
+$ cd tevc2022/  # optional
 $ conda create -y --prefix env_tevc2022
 $ conda activate env_tevc2022/
 $ conda install -y --prefix env_tevc2022/ python=3.8.12
