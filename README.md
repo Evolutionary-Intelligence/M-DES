@@ -6,10 +6,13 @@ For all benchmarking optimizers, their source code are openly accessed via our r
 
 # Project Structure
 
-* **README.md**: for basic information of the companion website
-* **run_experiments.py**: script to run all numerical experiments for all black-box optimizers
-* **plot_median_vs_es.py**: to print (median) convergence curves when compared with [ESs](https://pypop.readthedocs.io/en/latest/es/es.html)
-* **plot_median_vs_others.py**: to print (median) convergence curves when compared with [all others](https://pypop.readthedocs.io/en/latest/index.html) (except ESs)
+* **README.md**: basic information of the companion website,
+* **run_experiments.py**: script to run all numerical experiments for all black-box optimizers (BBO),
+* **plot_median_vs_es.py**: to print (median) convergence curves when compared with [ESs](https://pypop.readthedocs.io/en/latest/es/es.html),
+* **plot_median_vs_others.py**: to print (median) convergence curves when compared with [all others](https://pypop.readthedocs.io/en/latest/index.html) (except ESs),
+* **data**: to store all data generated in numerical experiments,
+* **figures**: to store all figures generated from data,
+* **pypoplib**: source code for our proposed meta-framework and also (rotated-shifted) benchmarking functions.
 
 # Bash for Python Virtual Environment (Conda)
 
