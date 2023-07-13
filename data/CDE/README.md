@@ -1,6 +1,6 @@
 # README
 
-```
+```bash
 nohup python run_experiments.py -s=1 -e=1 -o=CDE >CDE_1_1.out 2>&1 &
 nohup python run_experiments.py -s=2 -e=2 -o=CDE >CDE_2_2.out 2>&1 &
 nohup python run_experiments.py -s=3 -e=3 -o=CDE >CDE_3_3.out 2>&1 &
