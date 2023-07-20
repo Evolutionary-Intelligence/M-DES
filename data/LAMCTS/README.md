@@ -12,3 +12,5 @@ nohup python run_experiments.py -s=8 -e=8 -o=LAMCTS >LAMCTS_8_8.out 2>&1 &
 nohup python run_experiments.py -s=9 -e=9 -o=LAMCTS >LAMCTS_9_9.out 2>&1 &
 nohup python run_experiments.py -s=10 -e=10 -o=LAMCTS >LAMCTS_10_10.out 2>&1 &
 ```
+
+Since its Python code cannot work well up to now, here we does not include its data.
