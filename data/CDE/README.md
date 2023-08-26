@@ -1,5 +1,7 @@
 # README
 
+If run on 10 different machines, run the following BASH commands:
+
 ```bash
 nohup python run_experiments.py -s=1 -e=1 -o=CDE >CDE_1_1.out 2>&1 &
 nohup python run_experiments.py -s=2 -e=2 -o=CDE >CDE_2_2.out 2>&1 &
@@ -11,4 +13,10 @@ nohup python run_experiments.py -s=7 -e=7 -o=CDE >CDE_7_7.out 2>&1 &
 nohup python run_experiments.py -s=8 -e=8 -o=CDE >CDE_8_8.out 2>&1 &
 nohup python run_experiments.py -s=9 -e=9 -o=CDE >CDE_9_9.out 2>&1 &
 nohup python run_experiments.py -s=10 -e=10 -o=CDE >CDE_10_10.out 2>&1 &
+```
+
+If run on only one machine, run the following BASH command:
+
+```bash
+nohup python run_experiments.py -s=1 -e=10 -o=CDE >CDE_1_10.out 2>&1 &
 ```
