@@ -22,11 +22,11 @@ For all benchmarking optimizers, their source code are openly accessed via our r
 $ conda deactivate
 $ mkdir PyProjects  # optional
 $ cd PyProjects/  # optional
-$ mkdir tevc2022  # optional
-$ cd tevc2022/  # optional
-$ conda create -y --prefix env_tevc2022
-$ conda activate env_tevc2022/
-$ conda install -y --prefix env_tevc2022/ python=3.8.12
+$ mkdir tpds2022  # optional
+$ cd tpds2022/  # optional
+$ conda create -y --prefix env_tpds2022
+$ conda activate env_tpds2022/
+$ conda install -y --prefix env_tpds2022/ python=3.8.12
 $ pip install numpy==1.24.2
 $ pip install scipy==1.10.1
 $ pip install scikit-learn==1.2.2
